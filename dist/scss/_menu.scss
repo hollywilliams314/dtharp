@@ -98,9 +98,9 @@
         &.show {
             transform: translate3d(0, 0, 0);
           }
-        &.current > a {
-            color: $secondary-color;
-        }
+        // &.current > a {
+        //     color: $secondary-color;
+        // }
     }
 
     .nav-link {
@@ -110,6 +110,7 @@
         padding: 0.5rem 0;
         font-weight: 300;
         color: set-text-color($primary-color);
+        // color: #fff;
         text-decoration: none;
         @include easeOut;
 
