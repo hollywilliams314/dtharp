@@ -3,11 +3,13 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
 @include mediaLg {
     .projects {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 @include mediaMd {
   main {
       align-items: center;
