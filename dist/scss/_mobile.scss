@@ -41,7 +41,6 @@
       transform: translate3d(100%, 0, 0);
 
       .portrait {
-        //   background: url('../img/portrait2.jpg');
           width: 150px;
           height: 150px;
       }
@@ -63,30 +62,28 @@
 
 }
 
-// @include mediaSm {
-//   main#home h1 {
-//       margin-top: 10vh;
-//   }
-//   .projects {
-//     grid-template-columns: 1fr;
-// }
-
-include mediaSm {
+@include mediaSm {
     main {
       padding: 2rem;
+      height: 100vh;
+
       #home h1 {
-        margin-top: 10vh;
+        margin-top: 7vh;
       }
   
       .lg-heading {
-        margin-top:1rem;
-        font-size: 5rem;
+        margin-top: 3rem;
+        font-size: 4rem;
       }
     }
   
     .projects {
       grid-template-columns: 1fr;
     }
-  }
 
-//}
+    .boxes {
+        div {
+          font-size: 1.1rem;
+        }
+    }
+  }
