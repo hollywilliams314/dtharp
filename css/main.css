@@ -4,13 +4,13 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 1.0s ease-out; }
+  transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
-    transition: all 1.0s ease-out; }
+    background: #000;
+    transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -35,6 +35,7 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+    background: #bfbfbf;
     float: left;
     width: 50%;
     height: 100vh;
@@ -42,28 +43,29 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #b3b3b3;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 1.0s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #ffffff;
+    background: #bfbfbf;
     transform: translate3d(0, 100%, 0);
-    transition: all 1.0s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("../img/IMG_8897.jpg");
+      width: 300px;
+      height: 300px;
+      background: url("../img/CloseUp3.jpg");
       border-radius: 50%;
       border: solid 3px #a973f0;
       background-size: cover; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 1.0s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
   .menu .nav-link {
@@ -72,9 +74,9 @@
     font-size: 30px;
     padding: 0.5rem 0;
     font-weight: 300;
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    transition: all 1.0s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
       color: #a973f0; }
 
@@ -94,14 +96,14 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
-  color: #fff;
+  background: #ffffff;
+  color: #000;
   height: 100vh;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/Dleaningonharp2.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -112,19 +114,22 @@ body {
       width: 100%;
       height: 100vh;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.85); }
+      background: rgba(255, 255, 255, 0.3); }
 
 h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 6rem; }
+  h1.md-heading, h2.md-heading, h3.md-heading {
+    font-size: 3rem;
+    padding: 0.2rem 1rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem; }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none; }
 
 header {
@@ -144,36 +149,30 @@ main {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #a973f0;
-        transition: all 1.0s ease-out; }
+        transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
 
 .about-info {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(2, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 325px;
     margin: auto;
-    border-radius: 50%;
     border: #a973f0 3px solid;
     background-size: cover; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
     grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
   .about-info .job {
-    background: #515151;
     padding: 0.5rem;
     border-bottom: #a973f0 5px solid; }
 
@@ -187,7 +186,7 @@ main {
     .projects img:hover {
       opacity: 0.5;
       border-color: #fff;
-      transition: all 1.0s ease-out; }
+      transition: all 0.5s ease-out; }
 
 .boxes {
   display: flex;
@@ -200,7 +199,7 @@ main {
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    transition: all 1.0s ease-out; }
+    transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
       background: #a973f0;
@@ -218,27 +217,27 @@ main {
     color: #000; }
 
 .btn-dark {
-  background: black;
+  background: gray;
   color: #fff; }
 
 .btn-light {
-  background: #c4c4c4;
+  background: white;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
-  color: #fff;
+  background: #e6e6e6;
+  color: #000;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {

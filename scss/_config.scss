@@ -1,13 +1,16 @@
-$primary-color: #444;
+$primary-color: #ffffff;
+// $primary-color: #444;
 $secondary-color: #a973f0;
 // $secondary-color: #34ebd8;
 $show-home-image: true;
 // $home-image: url(../img/IMG_8960.jpg);
-$home-image: url(../img/background.jpg);
-$background-opacity: 0.85;
+$home-image: url(../img/Dleaningonharp2.jpg);
+// $home-image: url(../img/background.jpg);
+$background-opacity: 0.3;
+// $background-opacity: 0.85;
 
 @mixin easeOut {
-    transition: all 1.0s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 @mixin background {
